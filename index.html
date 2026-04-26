@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1A0505">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>DADDY's Bakery — Baked with Love, Made for You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════
+     NAV
+═══════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+
+    <div class="nav-logo" onclick="scrollTo(0,0)">
+      <div class="nav-emblem">D's</div>
+      <div class="nav-brand">DADDY's Bakery</div>
+    </div>
+
+    <div class="nav-links">
+      <a class="nav-link" href="#about">Our Story</a>
+      <a class="nav-link" href="#menu">Menu</a>
+      <a class="nav-link" href="#order">Order</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </div>
+
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <button class="nav-cta" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
+      Order Now
+    </button>
+
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobileMenu()">Our Story</a>
+  <a href="#menu" onclick="closeMobileMenu()">Menu</a>
+  <a href="#order" onclick="closeMobileMenu()">Order</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+
+<!-- ═══════════════════════════
+     HERO
+═══════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ornament">
+    <div class="hero-ornament-text">🎂</div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Established 2018 · Virar, Maharashtra</div>
+    <h1 class="hero-title">Crafted with<br><em>Love &amp; Passion</em></h1>
+    <p class="hero-tagline">Baked with Love, Made for You</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">Explore Our Menu</button>
+      <button class="btn-outline" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">Order Online</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">7+</div>
+        <div class="stat-label">Years of Baking</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">5000+</div>
+        <div class="stat-label">Happy Customers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">120+</div>
+        <div class="stat-label">Menu Items</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4.9★</div>
+        <div class="stat-label">Avg Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════
+     MARQUEE
+═══════════════════════════ -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">Artisan Breads</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Luxury Cakes</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Belgian Chocolates</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">French Pastries</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Custom Orders</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Daily Fresh Bakes</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Gifting Collections</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Artisan Breads</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Luxury Cakes</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Belgian Chocolates</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">French Pastries</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Custom Orders</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Daily Fresh Bakes</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Gifting Collections</span><span class="marquee-dot">✦</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════
+     ABOUT
+═══════════════════════════ -->
+<section id="about" class="about-section">
+  <div class="about-inner">
+    <div>
+      <div class="about-badge">Our Story</div>
+      <h2 class="section-title">A Family Legacy of <em>Sweetness</em></h2>
+      <p class="section-body">DADDY's Bakery was born from a father's love for baking — every recipe perfected over decades, every product crafted with genuine care. What started as weekend bakes for the family has grown into Virar's most beloved artisan bakery.</p>
+      <p class="section-body">We use only the finest ingredients — from premium Belgian chocolate to hand-milled flours — because every bite you take deserves to be extraordinary.</p>
+      <button class="btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">Discover Our Menu</button>
+    </div>
+    <div class="about-img">🏪</div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════
+     MENU
+═══════════════════════════ -->
+<section id="menu" class="menu-section">
+  <div class="menu-inner">
+    <div class="section-eyebrow">What We Serve</div>
+    <h2 class="section-title-light">Our <em>Signature</em> Collection</h2>
+    <div class="menu-cats">
+      <button class="mcat-btn active" onclick="filterWebCat(this,'all')">All</button>
+      <button class="mcat-btn" onclick="filterWebCat(this,'cakes')">Cakes</button>
+      <button class="mcat-btn" onclick="filterWebCat(this,'pastries')">Pastries</button>
+      <button class="mcat-btn" onclick="filterWebCat(this,'breads')">Breads</button>
+      <button class="mcat-btn" onclick="filterWebCat(this,'chocolates')">Chocolates</button>
+      <button class="mcat-btn" onclick="filterWebCat(this,'beverages')">Beverages</button>
+    </div>
+    <div class="menu-grid" id="web-menu-grid"></div>
+    <div style="text-align:center;margin-top:40px;">
+      <button class="btn-outline" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">Order from Our Menu →</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════
+     ORDER
+═══════════════════════════ -->
+<section id="order" class="order-section">
+  <div class="order-inner">
+    <div style="text-align:center;">
+      <div class="section-eyebrow">Order Online</div>
+      <h2 class="section-title">Fresh to Your <em>Doorstep</em></h2>
+      <p class="order-intro">Place your order and it'll arrive directly at our POS. We'll start baking right away.</p>
+    </div>
+
+    <div class="order-form-wrap">
+      <div class="order-form-header">
+        <div class="ofh-title">Your Order</div>
+        <div class="cart-badge" id="web-cart-count">0 items</div>
+      </div>
+      <div class="order-form-body">
+
+        <!-- LEFT: SELECT + CART -->
+        <div class="order-items-col">
+          <div class="col-label">Select Items</div>
+          <div id="quick-menu" style="margin-bottom:16px;display:grid;gap:6px;"></div>
+          <div class="col-label" style="margin-top:16px;">Your Cart</div>
+          <div id="web-cart-display">
+            <div class="web-cart-empty">No items selected yet</div>
+          </div>
+          <div class="order-summary" id="web-summary" style="display:none;">
+            <div class="os-row"><span>Subtotal</span><span id="ws-sub">₹0</span></div>
+            <div class="os-row"><span>GST (5%)</span><span id="ws-gst">₹0</span></div>
+            <div class="os-row os-total"><span>Total</span><span id="ws-total">₹0</span></div>
+          </div>
+        </div>
+
+        <!-- RIGHT: DETAILS -->
+        <div class="order-detail-col">
+          <div class="col-label">Your Details</div>
+          <div class="form-field">
+            <label>Full Name</label>
+            <input class="form-input" type="text" placeholder="Your name" id="w-name">
+          </div>
+          <div class="form-field">
+            <label>Phone Number</label>
+            <input class="form-input" type="tel" placeholder="+91 98765 43210" id="w-phone">
+          </div>
+          <div class="form-field">
+            <label>Order Type</label>
+            <select class="form-select" id="w-type">
+              <option>Delivery</option>
+              <option>Takeaway</option>
+              <option>Dine-In</option>
+            </select>
+          </div>
+          <div class="form-field" id="address-field">
+            <label>Delivery Address</label>
+            <input class="form-input" type="text" placeholder="Your full address" id="w-address">
+          </div>
+          <div class="form-field">
+            <label>Special Instructions</label>
+            <input class="form-input" type="text" placeholder="Allergies, preferences..." id="w-notes">
+          </div>
+          <div class="form-field">
+            <label>Payment</label>
+            <select class="form-select">
+              <option>Cash on Delivery</option>
+              <option>UPI / QR Code</option>
+              <option>Card on Delivery</option>
+            </select>
+          </div>
+          <button class="place-order-btn" onclick="placeWebOrder()">Place Order — Send to Bakery</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════
+     TESTIMONIALS
+═══════════════════════════ -->
+<section class="testi-section">
+  <div class="testi-inner">
+    <div class="section-eyebrow">What Our Guests Say</div>
+    <h2 class="section-title">Loved by the <em>Community</em></h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The Red Velvet Cake from DADDY's is absolutely divine. Nothing compares to their quality in all of Virar."</p>
+        <div class="testi-author">— Sneha R., MIRZAHADIPURA</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Ordered for my daughter's birthday — the custom cake was a masterpiece. Every guest was asking where it came from!"</p>
+        <div class="testi-author">— Ramesh K., SADAR CHOWK</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Their sourdough bread and croissants are the highlight of my mornings. Truly artisan quality at its finest."</p>
+        <div class="testi-author">— Meera P., MAU</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════
+     FOOTER
+═══════════════════════════ -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">DADDY's Bakery</div>
+      <div class="footer-tagline">Baked with Love, Made for You</div>
+      <div class="footer-contact">
+        📍 Shop No. 1, MIRZAHADI PURA MAU, MAUNATH BHANJAN<br>
+        📞 +91 9621595005<br>
+        📧 hello@daddysbakery.in<br>
+        🕐 Open Daily: 7:00 AM – 9:00 PM
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <a class="footer-link" href="#about">Our Story</a>
+      <a class="footer-link" href="#menu">Menu</a>
+      <a class="footer-link" href="#order">Order Online</a>
+      <a class="footer-link" href="#">Custom Cakes</a>
+      <a class="footer-link" href="#">Gift Hampers</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Our Products</div>
+      <a class="footer-link" href="#">Artisan Cakes</a>
+      <a class="footer-link" href="#">French Pastries</a>
+      <a class="footer-link" href="#">Breads &amp; Loaves</a>
+      <a class="footer-link" href="#">Chocolates</a>
+      <a class="footer-link" href="#">Beverages</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Follow Us</div>
+      <a class="footer-link" href="#">Instagram</a>
+      <a class="footer-link" href="#">Facebook</a>
+      <a class="footer-link" href="#">WhatsApp</a>
+      <a class="footer-link" href="#">Swiggy</a>
+      <a class="footer-link" href="#">Zomato</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 DADDY's Bakery. All rights reserved.</div>
+    <div class="footer-copy">Made with ♥ in MAU, UTTAR PRADESH</div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════
+     SUCCESS MODAL
+═══════════════════════════ -->
+<div class="modal-bg" id="order-modal">
+  <div class="modal-box">
+    <div class="modal-icon">🎉</div>
+    <div class="modal-title2">Order Placed!</div>
+    <div class="modal-body">Your order has been sent directly to DADDY's Bakery. Our team will confirm your order within a few minutes. Thank you for choosing us!</div>
+    <button class="modal-close-btn" id="modal-close">Back to Menu</button>
+  </div>
+</div>
+
+<!-- MOBILE FLOATING ORDER BUTTON -->
+<div class="mobile-fab" id="mobile-fab">
+  <button onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'}); this.parentElement.style.display='none'">
+    🛒 Order Now
+  </button>
+</div>
+
+<script src="script.js"></script>
+<script>
+  // Hide FAB when order section is in view
+  const fabObserver = new IntersectionObserver(entries => {
+    const fab = document.getElementById('mobile-fab');
+    if (!fab) return;
+    fab.style.opacity = entries[0].isIntersecting ? '0' : '1';
+    fab.style.pointerEvents = entries[0].isIntersecting ? 'none' : 'auto';
+  }, { threshold: 0.1 });
+  const orderSec = document.getElementById('order');
+  if (orderSec) fabObserver.observe(orderSec);
+</script>
+</body>
+</html>
